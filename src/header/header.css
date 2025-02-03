@@ -1,0 +1,25 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: var(--spacer-lg);
+}
+
+.__fnc{
+    display: flex;
+flex-direction: column;
+    gap: var(--spacer-xs);
+}
+
+.__hdr-content{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacer-sm);
+}
+
+.__hdr-content > p {
+    text-align: left;
+    margin: 0;
+    font-size: var(--code-size);
+    font-weight: var(--code-weight);
+}

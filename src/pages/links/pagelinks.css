@@ -1,0 +1,21 @@
+.__pg-links-wrapper{
+    display: flex;
+}
+
+.__pg-links-wrapper a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.__pg-links-wrapper a > span{
+    line-height: var(--ln-height-sm);
+}
+
+
+.__pg-links-wrapper img{
+    display: inline;
+    width: var(--img-size-xs);
+    height: var(--img-size-xs);
+    margin-right: var(--spacer-2xs);
+}

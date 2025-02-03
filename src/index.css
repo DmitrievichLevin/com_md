@@ -1,0 +1,218 @@
+.font-lg {
+  font-family: var(--font-sans);
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: var(--size-lg);
+}
+
+.font-md {
+  font-family: var(--font-sans);
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: var(--size-md);
+}
+
+.font-sm {
+  font-family: var(--font-sans);
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: var(--size-sm);
+}
+
+.font-semibold{
+  font-weight: 600;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.__sys-font{
+  font-family: system-ui;
+}
+
+
+html, body, #root {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  overflow-x: hidden;
+  word-wrap: break-word;
+  text-wrap: wrap;
+}
+
+@media (max-width: 500px) {
+   body {
+  --img-size-xs: 0.5rem;
+  --img-height-sm: 83px;
+  --size-2xs: 0.125rem;
+  --size-xs: 0.25rem;
+  --size-sm: 0.325rem;
+  --size-md: 0.625rem;
+  --size-lg: 0.75rem;
+  --size-xl: 1rem;
+  --size-2xl: 1.5rem;
+  --lttr-spacing-wide: 0.0325rem;
+  --spacer-4xs: 0.0625rem;
+  --spacer-2xs: 0.125rem;
+  --spacer-xs: 0.25rem;
+  --spacer-sm: 0.325rem;
+  --spacer-md: 0.5rem;
+  --spacer-lg: 0.75rem;
+  --spacer-xl: 1rem;
+  --spacer-2xl: 1.5rem;
+  --ln-height-sm: 0.5rem;
+  --ln-height: 0.825rem;
+  --rounded-full: 999px;
+  --code-weight: 500;
+  --code-size: var(--size-md);
+  --code-ln-height: 1rem;
+  --border-w-md: 1px;
+  --canvas-sz: 200px;
+ }
+}
+
+@media (min-width: 501px) {
+ body {
+  --img-size-xs: 1rem;
+  --img-height-sm: 250px;
+  --size-2xs: 0.25rem;
+  --size-xs: 0.5rem;
+  --size-sm: 0.75rem;
+  --size-md: 1.25rem;
+  --size-lg: 1.5rem;
+  --size-xl: 2rem;
+  --size-2xl: 3rem;
+  --lttr-spacing-wide: 0.075rem;
+  --spacer-4xs: 0.125rem;
+  --spacer-2xs: 0.25rem;
+  --spacer-xs: 0.5rem;
+  --spacer-sm: 0.75rem;
+  --spacer-md: 1rem;
+  --spacer-lg: 1.5rem;
+  --spacer-xl: 2rem;
+  --spacer-2xl: 3rem;
+  --ln-height-sm: 1rem;
+  --ln-height: 1.75rem;
+  --rounded-full: 999px;
+  --code-weight: 500;
+  --code-size: var(--size-md);
+  --code-ln-height: 2rem;
+  --border-w-md: 2px;
+  --canvas-sz: 400px;
+ }
+}
+
+body {
+  margin: 0;
+  color: var(--base-font-color);
+  font-family: "Space Grotesk", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --primary-color-bg: #0A449B;
+  --color-primary-background-hover: #0A2F6C;
+  --color-interactive-background-disabled: #0000000C;
+  --color-interactive-content-disabled: #0000003F;
+  
+  --font-sans: "Space Grotesk", serif;
+  --font-14-20-regular: normal 400 0.875rem / 1.25rem var(--font-sans);
+  --font-14-20-semibold: normal 600 0.875rem / 1.25rem var(--font-sans);
+  --font-16-20-regular: normal 400 1rem / 1.25rem var(--font-sans);
+  --font-12-16-regular: normal 400 0.75rem / 1rem var(--font-sans);
+  --font-12-16-semibold: normal 600 0.75rem / 1rem var(--font-sans);
+  --yellow-100: hsl(43, 85%, 95%);
+  --yellow-200: hsl(43, 85%, 88%);
+  --yellow-300: hsl(43, 85%, 72%);
+  --yellow-terminal: #E5E50E;
+  --code-blue: #9334e6;
+  --comment-gray: #A0A1A7;
+  --str-green: #188038;
+  --bracket-highlight: #0431fa;
+  --def-pink: #E2476E;
+  --base-font-color: #333;
+  --return-red: #CF212E;
+}
+
+main {
+    text-align: left;
+    font-family: var(--font-sans);
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: var(--size-md);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px dotted transparent;
+}
+
+a:hover{
+  color: var(--primary-color-bg);
+  border-bottom: 1px dotted var(--primary-color-bg);
+}
+
+.__sys-d{
+  color: var(--def-pink);
+}
+
+.key-word{
+  color: var(--code-blue);
+}
+
+.__brkt{
+  color: var(--bracket-highlight);
+}
+
+.__str{
+  color: var(--str-green);
+}
+
+.__cmnt{
+  color: var(--comment-gray) !important;
+  display: block;
+  margin:0;
+  font-size: var(--size-md);
+  line-height: var(--size-md);
+  overflow-y: hidden;
+}
+
+.__bs-font-color{
+  color: var(--base-font-color);
+}
+
+.__rtn{
+  color: var(--return-red);
+}
+
+.code-block{
+  line-height: var(--code-ln-height);
+}
+
+.__tab-lg{
+  margin-left: 2.5rem !important;
+}
+
+.__tab-xl{
+  margin-left: 5rem !important;
+}
+
+.__uline{
+  text-decoration: underline;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

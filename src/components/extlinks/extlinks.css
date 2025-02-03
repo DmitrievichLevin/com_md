@@ -1,0 +1,20 @@
+.__stck_ovflow{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--yellow-200);
+    border: var(--yellow-300) solid var(--border-w-md);
+    border-radius: var(--spacer-xs);
+    padding: var(--spacer-xs);
+    height: fit-content;
+    gap: var(--spacer-md);
+}
+
+.__stck_ovflow > div:not(:last-child) {
+    padding-bottom: var(--spacer-xs);
+    border-bottom: var(--yellow-300) solid var(--border-w-md);
+}
+
+.__ext_link{
+    cursor: pointer;
+    font-size: var(--code-size);
+}

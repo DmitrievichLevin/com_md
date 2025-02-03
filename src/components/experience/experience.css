@@ -1,0 +1,30 @@
+.__exp-cn{
+    font-size: var(--code-size);
+    font-weight: var(--code-weight);
+    line-height: var(--code-ln-height);
+    padding-top: 0 !important;
+    margin: 0;
+}
+
+.__json > *{
+    margin: 0;
+}
+
+.__json{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+
+@media (max-width: 500px) {
+  .__exp-cn .__term-child-wrapper{
+    width: 95%;
+}
+}
+
+@media (min-width: 501px) {
+  .__exp-cn .__term-child-wrapper{
+    width: 80%;
+}
+}

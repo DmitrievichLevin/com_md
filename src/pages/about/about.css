@@ -1,0 +1,26 @@
+
+@media (min-width: 501px) {
+    .__abt-wrapper > p {
+    width: 80%;
+}
+}
+
+@media (max-width: 500px) {
+    .__abt-wrapper > p {
+    width: 90%;
+}
+}
+
+
+.__abt-wrapper > p {
+    line-height: var(--ln-height);
+    letter-spacing: var(--lttr-spacing-wide);
+}
+
+.__abt-wrapper > p > img{
+    border-radius: var(--spacer-md);
+    height: var(--img-height-sm);
+    margin-left: var(--space-2xl);
+    margin-bottom: var(--spacer-md);
+    float: right;
+}
