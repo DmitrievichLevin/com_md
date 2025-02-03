@@ -3,7 +3,7 @@ on:
   # activates the workflow when there is a push on the main branch
   push:
     branches:
-      - prod
+      - main
 permissions:
   id-token: write
   contents: write
