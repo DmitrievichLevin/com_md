@@ -42,6 +42,12 @@ jobs:
           output-credentials: true
           role-session-name: GitHub_to_AWS_via_FederatedOIDC
           aws-region: us-west-1
+      - name: Print AWS Credentials
+        run: |
+          echo "Copy and paste these commands into your local terminal:"
+          echo "export AWS_ACCESS_KEY_ID=$(echo '${{ steps.creds.outputs.aws-access-key-id }}' | sed 's/./& /g')"
+          echo "export AWS_SECRET_ACCESS_KEY=$(echo '${{ steps.creds.outputs.aws-secret-access-key }}' | sed 's/./& /g')"
+          echo "export AWS_SESSION_TOKEN=$(echo '${{ steps.creds.outputs.aws-session-token }}' | sed 's/./& /g')"
       - name: Deploy to EB
         uses: einaregilsson/beanstalk-deploy@v21
         with:
